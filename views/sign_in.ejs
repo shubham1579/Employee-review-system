@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="/css/sign.css">
+
+<div class="main-container shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+
+    <h1> Welcome </h1>
+    <form method="POST" action="/users/create-session" >
+        <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" aria-describedby="emailHelp" name="email" placeholder="Enter email" required>
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" name="password" placeholder="Enter password" required>
+        </div>
+        <div class="d-flex justify-content-between">
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <a href="/users/forgetPassword"> ForgetPassword </a>
+        </div>
+    </form>
+    
+
+    <div class="centered-anchor">
+        <small> Don't have account ?</small>
+        <a href="/users/sign-up"> Register User</a>
+    </div>
+        
+</div> 

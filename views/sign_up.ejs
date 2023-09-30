@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="/css/sign.css">
+
+<div style="height: 520px;" class="main-container shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+
+    <h1> Welcome </h1>
+    <form method="POST" action="/users/create" >
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" name="name" placeholder="Enter name" required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" aria-describedby="emailHelp" name="email" placeholder="Enter email" required>
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" name="password" placeholder="Enter password" required>
+        </div>
+        <div class="mb-3">
+            <label for="confirmPassword" class="form-label">Confirm password</label>
+            <input type="password" class="form-control" name="confirmPassword" placeholder="Confirm password" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+    </form>
+</div>

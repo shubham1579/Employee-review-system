@@ -1,0 +1,89 @@
+.nav{
+    height: 75px;
+    background-color:#787ede;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    margin-left: 55px;
+}
+
+.logo a{
+    font-size: 40px;
+    text-decoration: none;
+    margin-left:-15px;
+    color:white;
+    letter-spacing:4px;
+    font-weight: 600;
+}
+
+.logo img{
+    height:65px;
+    width:80px;
+    margin-left:30px;
+    margin-top:-30px;
+}
+
+.user{
+    font-size: 20px;
+    margin-left:2px;
+    margin-right:8px;
+    margin-top:8px;
+    color:white;
+    font-weight:bold;
+
+}
+
+.user img{
+    height:30px;
+    width:30px;
+    padding:5px;
+    margin-right:8px;
+}
+
+/* Thesse styling are for logOut, button which is present on the navBar */
+
+
+.links{
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.links ul{
+    display: flex;
+    margin: 0px;
+    justify-content: space-between;
+}
+
+.links li{
+    list-style: none;
+    font-size: 19px;
+    padding-left: 20px;
+}
+
+.links li a{
+    text-decoration: none;
+    color: white;
+}
+
+.logout{
+    margin-right: 40px;
+}
+
+.logout a{
+    font-size: 30px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.logout small{
+    font-size: 15px;
+    color:white;
+    text-decoration: none;
+    padding:5px;
+}

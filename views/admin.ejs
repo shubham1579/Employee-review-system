@@ -1,0 +1,67 @@
+<link rel="stylesheet" href="/css/admin.css">
+<div class="container-fluid mt-2">
+
+    <h2 class="text-center">Kindly, assign Recipient and Reviewer</h2>
+    
+    <div class="d-flex justify-content-around">
+        <div class="review-container shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+            <div class="review-width">
+                <h4 class="text-center">Assign Task</h4>
+                <hr>
+                
+                <form action="/admin/setReviewes" method="POST" class="mt-1 card-body">
+                    <div class="mb-3">
+                        Set Reviewer
+                        <select class="form-select form-select" aria-label="Default select example" name="sender">
+                            <option selected>Sender</option>
+                            <% for(let i = 0; i < employee.length ; i++){ %>
+                                
+                                <option value= <%= employee[i].id %> > <%= employee[i].name %> </option>
+                                
+                            <%}%>    
+                        </select>
+                    </div>
+    
+                    <div class="mb-3">
+                      Select the Recipient Employee
+                        <select class="form-select form-select" aria-label="Default select example" name="reciver">
+                            <option selected>Reciever</option>
+                            <% for(let i = 0; i < employee.length ; i++){ %>
+                            
+                                <option value= <%= employee[i].id %> > <%= employee[i].name %> </option>
+                                
+                            <%}%>
+                        </select>
+                    </div>
+    
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+    
+            </div>
+        </div>
+    
+        <div class="review-container shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+            <div class="review-width">
+                <h4 class="text-center">Make admin to any Employee</h4>
+                <hr>
+        
+                <form method="POST" action="/admin/newAdmin" class="mt-3">
+                    <div class="mb-3 mt-3">
+                        Select the Admin Employee
+                        <select class="form-select form-select mb-3" aria-label="Default select example" name="selectedUser">
+                            <option selected>Select to make Admin</option>
+                            <% for(let i = 0; i < employee.length ; i++){ %>
+                                
+                                <option value= <%= employee[i]._id %> > <%= employee[i].name %> </option>
+                                
+                            <%}%>
+                        </select>
+                    </div>
+        
+                    <button type="submit" class="btn btn-primary">Submit</button>
+        
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

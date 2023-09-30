@@ -1,0 +1,13 @@
+.review-container{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    align-items: center;
+    height: fit-content;
+    border-radius:10px;
+}
+
+.review-width{
+    width: 90%;
+}
